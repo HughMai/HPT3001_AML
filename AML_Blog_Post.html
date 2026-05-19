@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When Your Bone Marrow's Factory Breaks Down: Understanding Leukaemia</title>
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 18px; scroll-behavior: smooth; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #faf8f5;
+      color: #1a1a1a;
+      line-height: 1.8;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #1b3a5c;
+      color: #fff;
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+    }
+    header .kicker {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #a8c4e0;
+      margin-bottom: 0.8rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      max-width: 600px;
+      margin: 0 auto 1rem;
+    }
+    header .subtitle {
+      font-size: 1.05rem;
+      color: #c8dced;
+      font-style: italic;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .meta {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.78rem;
+      color: #7a9bbf;
+      margin-top: 1.2rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Article ── */
+    article {
+      padding: 3rem 0 4rem;
+    }
+    article p {
+      margin-bottom: 1.4rem;
+    }
+    article p:first-child::first-letter {
+      float: left;
+      font-size: 3.5rem;
+      line-height: 0.8;
+      padding-right: 0.1em;
+      padding-top: 0.05em;
+      color: #1b3a5c;
+      font-weight: 700;
+    }
+
+    /* ── Section headings ── */
+    h2 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #1b3a5c;
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #d0e3f0;
+    }
+
+    /* ── Pull-quote ── */
+    blockquote {
+      border-left: 4px solid #1b3a5c;
+      margin: 2rem 0;
+      padding: 0.8rem 1.2rem;
+      background: #edf4fb;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #234;
+      border-radius: 0 4px 4px 0;
+    }
+
+    /* ── Consequence table ── */
+    .consequence-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.8rem 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.88rem;
+    }
+    .consequence-table thead tr {
+      background: #1b3a5c;
+      color: #fff;
+    }
+    .consequence-table th {
+      padding: 0.7rem 0.9rem;
+      text-align: left;
+      font-weight: 600;
+    }
+    .consequence-table tbody tr:nth-child(even) { background: #eef4fb; }
+    .consequence-table tbody tr:nth-child(odd)  { background: #f7fbff; }
+    .consequence-table td {
+      padding: 0.65rem 0.9rem;
+      vertical-align: top;
+      border-bottom: 1px solid #d4e5f5;
+    }
+    .consequence-table td:first-child { font-weight: 600; color: #1b3a5c; }
+
+    /* ── Figure / image ── */
+    figure {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    figure img {
+      max-width: 100%;
+      border-radius: 6px;
+      border: 1px solid #d0dce8;
+    }
+    figcaption {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      color: #667;
+      margin-top: 0.5rem;
+      line-height: 1.5;
+    }
+    figcaption a { color: #1b3a5c; }
+
+    /* ── Reference list ── */
+    .references {
+      background: #f0f4f8;
+      border-top: 3px solid #1b3a5c;
+      padding: 2rem 1.5rem;
+      margin-top: 3rem;
+    }
+    .references h3 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #1b3a5c;
+      margin-bottom: 1rem;
+    }
+    .references ul {
+      list-style: none;
+      padding: 0;
+    }
+    .references li {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.8rem;
+      color: #445;
+      line-height: 1.6;
+      margin-bottom: 0.9rem;
+      padding-left: 1.2rem;
+      text-indent: -1.2rem;
+    }
+    .references li a { color: #1b3a5c; }
+
+    /* ── Footer ── */
+    footer {
+      background: #1b3a5c;
+      color: #a8c4e0;
+      text-align: center;
+      padding: 1.2rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      html { font-size: 16px; }
+      header h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">Health Science Explained</div>
+  <h1>When Your Bone Marrow's Factory Breaks Down</h1>
+  <p class="subtitle">A plain-language guide to what actually happens inside the body in Acute Myeloid Leukaemia</p>
+  <p class="meta">HPT3001 &nbsp;·&nbsp; Assessment 3 Part B &nbsp;·&nbsp; For adults aged 55–70</p>
+</header>
+
+<div class="container">
+<article>
+
+  <p>Your blood is not just a liquid — it is a living product your body manufactures every day, deep inside your bones. Understanding how that production breaks down is the key to understanding Acute Myeloid Leukaemia (AML).</p>
+
+  <h2>The Bone Marrow Factory</h2>
+
+  <p>Inside large bones — your hips, sternum, and thigh bones — sits a spongy tissue called <strong>bone marrow</strong>. Within it are <strong>haematopoietic stem cells</strong>: master template cells that divide and slowly mature into three essential products: <strong>red blood cells</strong> (carrying oxygen to every tissue), <strong>platelets</strong> (clotting agents that seal wounds), and <strong>white blood cells</strong> (your immune system's infection fighters). This lifelong process is called <strong>haematopoiesis</strong>. In AML, it is sabotaged from within.</p>
+
+  <figure>
+    <img
+      src="images/hematopoiesis.svg"
+      alt="Diagram showing how haematopoietic stem cells branch into red blood cells, platelets, and white blood cells"
+      width="700"
+    />
+    <figcaption>
+      <strong>Figure 1.</strong> Normal haematopoiesis — stem cells mature into three essential blood-cell types.<br>
+      <em>Haematopoiesis (human) diagram</em> by A. Rad &amp; Mikael Häggström is licensed under
+      <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>.
+      Source: <a href="https://commons.wikimedia.org/wiki/File:Hematopoiesis_simple.svg" target="_blank">Wikimedia Commons</a>.
+    </figcaption>
+  </figure>
+
+  <h2>One Cell Goes Rogue</h2>
+
+  <p>Every cell in your body follows the same instruction manual: <strong>DNA</strong> — a long chemical code that tells each cell which proteins to make and how to behave. AML begins when a <strong>myeloid progenitor cell</strong> (a mid-stage cell on its way to becoming a red cell, platelet, or white cell) acquires a damaging error in its DNA. This mutation is <em>not</em> inherited — it accumulates over a lifetime of normal cell divisions, which is why AML primarily affects older adults (median diagnosis age: 68).</p>
+
+  <p>The damaged DNA triggers two simultaneous failures. First, <strong>differentiation arrest</strong>: the cell loses the ability to mature. It freezes at an immature stage called a <strong>blast</strong>. Second, <strong>uncontrolled proliferation</strong>: the blast keeps dividing relentlessly, churning out billions of identical, non-functional copies.</p>
+
+  <h2>Blasts Take Over</h2>
+
+  <p>Bone marrow has limited space. As leukaemic blasts multiply, they physically crowd out the healthy stem cells responsible for normal blood production. When blasts exceed <strong>20% of all bone marrow cells</strong>, the diagnostic threshold for AML is crossed — and the factory effectively shuts down.</p>
+
+  <figure>
+    <img
+      src="images/aml_blasts.jpg"
+      alt="Microscope image of a leukaemic blast cell containing pink rod-shaped Auer rods — a feature characteristic of AML"
+      width="540"
+    />
+    <figcaption>
+      <strong>Figure 2.</strong> A leukaemic blast under the microscope — large and immature, with pink rod-shaped <em>Auer rods</em> inside it (a microscopic feature characteristic of AML).<br>
+      <em>Auer rods in leukemic blast</em> by Ed Uthman (2008) is licensed under
+      <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>.
+      Source: <a href="https://commons.wikimedia.org/wiki/File:Auer_Rods_in_Leukemic_Blast_(2434847298).jpg" target="_blank">Wikimedia Commons</a>.
+    </figcaption>
+  </figure>
+
+  <h2>From Cellular Chaos to Symptoms</h2>
+
+  <p>Three critical shortages emerge as the marrow fails, each producing distinct symptoms directly traceable to the blast takeover:</p>
+
+  <table class="consequence-table">
+    <thead>
+      <tr>
+        <th>Cell depleted</th>
+        <th>Resulting condition</th>
+        <th>Symptoms you experience</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Red blood cells</td>
+        <td><strong>Anaemia</strong> — insufficient oxygen delivery</td>
+        <td>Persistent fatigue, pallor, breathlessness on mild exertion</td>
+      </tr>
+      <tr>
+        <td>Platelets</td>
+        <td><strong>Thrombocytopenia</strong> — clotting failure</td>
+        <td>Easy bruising, pinpoint skin bleeds (petechiae), prolonged bleeding, bleeding gums</td>
+      </tr>
+      <tr>
+        <td>White blood cells</td>
+        <td><strong>Neutropenia</strong> — immune collapse</td>
+        <td>Repeated infections, unexplained fevers, slow-healing wounds</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Why Age Increases the Risk</h2>
+
+  <p>Each cell division carries a small risk of a DNA copying error. Over decades these errors accumulate — a process called <strong>clonal haematopoiesis</strong>. Many over-70s carry low-level mutations without ever developing AML; the disease only emerges when enough mutations converge to block maturation and drive uncontrolled growth. This explains why AML is rare before 40 but rises sharply through the 60s and beyond.</p>
+
+  <p>AML is the story of a single rogue cell that refused to grow up — and in doing so, quietly dismantled the factory that kept the rest of the body alive.</p>
+
+</article>
+</div><!-- /.container -->
+
+<div class="references">
+  <div class="container">
+    <h3>References (APA 7th edition)</h3>
+    <p style="font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.78rem; color: #556; margin-bottom: 1rem; font-style: italic;">
+      References for the creative resources used to make this blog post — images and AI tools. The pathophysiology content itself does not require references (per the HPT3001 brief).
+    </p>
+    <ul>
+      <li>
+        Anthropic. (2026). <em>Claude</em> (claude-opus-4-7) [Large language model]. https://www.anthropic.com
+      </li>
+      <li>
+        Rad, A., &amp; Häggström, M. (2009). <em>Hematopoiesis (human) diagram</em> [Diagram]. Wikimedia Commons. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Hematopoiesis_simple.svg" target="_blank">https://commons.wikimedia.org/wiki/File:Hematopoiesis_simple.svg</a>
+      </li>
+      <li>
+        Uthman, E. (2008). <em>Auer rods in leukemic blast</em> [Photograph]. Wikimedia Commons. Licensed under <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Auer_Rods_in_Leukemic_Blast_(2434847298).jpg" target="_blank">https://commons.wikimedia.org/wiki/File:Auer_Rods_in_Leukemic_Blast_(2434847298).jpg</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <p>HPT3001 Assessment 3 Part B &nbsp;·&nbsp; Communicating Disease: Acute Myeloid Leukaemia &nbsp;·&nbsp; 2026</p>
+</footer>
+
+</body>
+</html>
